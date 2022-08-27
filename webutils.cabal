@@ -1,0 +1,30 @@
+name:                webutils
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/MonkeyAPI#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Sean Ray
+maintainer:          seanray410@gmail.com
+copyright:           2022 Sean Ray
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+                     CHANGELOG.md
+
+executable MonkeyAPI
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5, random, scotty, mtl, http-types, text, base-compat, directory
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
